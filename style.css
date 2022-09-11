@@ -45,8 +45,8 @@ h2, h4, h6 {
     border:1px solid var(--dkest-color);
 }
 .title {
-    font-size:35px;
-    padding: 10px 0;
+    font-size:25px;
+    padding: 25px 50px;
     text-align:center;
     font-style:italic;
 }
