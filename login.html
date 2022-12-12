@@ -34,21 +34,21 @@
         </ul>
     </nav>
     <div class='loginpagediv'>
-        <p style='font-size: 30pt;'><strong>BTV Member Login</strong></p>
+        <p style='font-size: 2.43rem; text-align: center;'><strong>BTV Member Login</strong></p>
         <div id="login-error-msg-holder">
             <p id="login-error-msg"><strong>Invalid username</strong> <span id="error-msg-second-line"><strong>and/or
                         password! Try again.</strong></span></p>
         </div>
-        <br>
-        <form id="login-form">
-            <label for="name">Username:</label><br>
-            <input type="text" id="username-field" class="login-form-field" name="username" placeholder="Username"><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password-field" name="password" class="login-form-field" placeholder="Password"
-                required><br><br>
-            <button type="submit" value="Login" id="login-form-submit"
-                style='font-size: 24pt; background-color: var(--3); color: var(--5); border-radius: 15px; border: 5px solid black;'>Submit</button>
-        </form>
+        <div class='loginboxbackground'>
+            <form id="login-form">
+                <input type="text" id="username-field" class="login-form-field" name="username"
+                    placeholder="Username"><br>
+                <input type="password" id="password-field" name="password" class="login-form-field"
+                    placeholder="Password" required><br><br>
+                <button type="submit" value="Login" id="login-form-submit"
+                    style='font-size: 1.3rem; background-color: var(--3); color: var(--5); border-radius: 15px; border: 5px solid black;'>Submit</button>
+            </form>
+        </div>
         <br>
     </div>
     <div class='normblock footerdiv'>
