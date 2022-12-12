@@ -1,60 +1,58 @@
 <!DOCTYPE html>
+<link rel='stylesheet' href='styles.css'>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>BTV - Baghdad's Community Television Station</title>
-      <link href="style.css" rel="stylesheet" type="text/css" media="all">
-      <link rel="icon" type="image/png" href="favicon.png" />
-<script defer src="login-page.js">
-</script>
-   </head>
-   <body class="scroll">
-      <div id="container">
-      <div id="header">
-         <h1 class="title">BTV - Baghdad Public Access</h1>
-         <h3>Community Television Since 1979</h3>
-      </div>
-      <div id="wrapper">
-         <div id="two-boxes">
-            <div class="box-one scroll" style="height:400px;">
-               <div class="section-title">
-                  Login
-               </div>
-               <div class="content">
-                  <p><strong>BTV Online Drop Box</strong></p>
-                  <form id="login-form">
-                     <label for="name">Username:</label><br>
-                     <input type="text" id="username-field" class="login-form-field" name="username" placeholder="Username"><br>
-                     <label for="password">Password:</label><br>
-                     <input type="password" id="password-field" name="password" class="login-form-field" placeholder="Password" required><br>
-                     <input type="submit" value="Login" id="login-form-submit">
-                  </form>
-                  <div id="login-error-msg-holder">
-                     <p id="login-error-msg"><strong>Invalid username</strong> <span id="error-msg-second-line"><strong>and/or password! Try again.</strong></span></p>
-                  </div>
-                  <p><strong>If you've forgotten your password, contact us at contact@baghdadpublicaccess.org</strong></p>
-                  <p>BTV Webmaster Note 02/03/99:<br> Drop Box server is down for a while for maintenance. I don't know when it'll be back up. For the time being just bring a hard drive to my office and I can transfer files in person</p>
-               </div>
-            </div>
-            <div class="box-two scroll">
-               <div class="section-title">Links</div>
-               <div class="nav-wrapper">
-                  <button><a href="index.html">Home</a></button>
-                  <button><a href="contact.html">Contact</a></button>
-                  <button><a href="schedule.html">Request a Time-Slot</a></button>
-                  <button><a href="grants.html">Apply For Arts Funding</a></button>
-                  <button><a href="downloads.html">Downloads</a></button>
-                  <button><a href="bbb.html">Baghdad's Bulletin Board</a></button>
-                  <button><a href="shows.html">Shows</a></button>    
-                  <button><a href="login.html">Login</a></button>
-               </div>
-            </div>
-         </div>
-         </div>
-         <div id="footer">
-            <p>© BTV 1979 - 1999. All rights reserved.</a></p>
-         </div>
-      </div>
-   </body>
+
+<head>
+    <title>BTV Member Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="login-page.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class='welcome'>
+            <h1>Welcome to the BTV Website</h1>
+            <h2>Baghdad Public Access - A Community Television Station</h2>
+            <h3>Proudly Serving Baghdad, Arkansas Since 1979</h3>
+    </header>
+    <div class='normblock'>
+        <h3 style="margin: 0; text-align: center;">Address: <span class='infohighlight'>2151 Main St., Suite E-13,
+                Baghdad, AR 72653</span> | Telephone: <span class='infohighlight'>(870) 555-0128</span> | Hours: <span
+                class='infohighlight'>Monday - Friday, 9am - 5pm</span> | E-Mail: <span
+                class='infohighlight'>contact@baghdadpublicaccess.org</span></h3>
+    </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a class='borderleft' href='index.html'>Home</a>
+            <li><a class='nonborder' href='schedule.html'>Schedule</a>
+            <li><a class='nonborder' href='downloads.html'>Downloads</a>
+            <li><a class='nonborder' href='bbb.html'>Baghdad's Bulletin Board</a>
+            <li><a class='borderright active' href='login.html'>Member Login</a>
+        </ul>
+    </nav>
+    <div class='normblock'>
+        <p><strong>BTV Member Login</strong></p>
+        <form id="login-form">
+            <label for="name">Username:</label><br>
+            <input type="text" id="username-field" class="login-form-field" name="username" placeholder="Username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password-field" name="password" class="login-form-field" placeholder="Password"
+                required><br>
+            <input type="submit" value="Login" id="login-form-submit">
+        </form>
+        <div id="login-error-msg-holder">
+            <p id="login-error-msg"><strong>Invalid username</strong> <span id="error-msg-second-line"><strong>and/or
+                        password! Try again.</strong></span></p>
+        </div>
+    </div>
+    <div class='normblock footerdiv'>
+        <h3 style="margin: 0; text-align: center; color: var(--3);">© BTV - Baghdad Public Access 1979 - 1999. All
+            rights
+            reserved.</h3>
+    </div>
+</body>
+
 </html>
