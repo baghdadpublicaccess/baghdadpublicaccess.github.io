@@ -6,6 +6,8 @@
     <title>Baghdad's Bulletin Board</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="bbb.js">
+    </script>
 </head>
 
 <body>
@@ -33,30 +35,31 @@
     </nav>
     <div class='normblock'>
         <p><strong>By submitting this post, you authorize BTV to automatically generate an ad listing that will be
-                played during a commercial break.</strong></p>
+                played during a commercial break. PLEASE FILL OUT ALL FIELDS. SUBMISSIONS WITHOUT ALL FIELDS FILLED IN
+                WILL BE AUTOMATICALLY DELETED AND NOT BROADCASTED!</strong></p>
         <p>BTV Webmaster Note 10/05/98:<br>DO NOT SUBMIT PRANK POSTINGS!!! IF IT HAPPENS AGAIN WE ARE SHUTTING THIS PAGE
             DOWN</p>
-        <form>
+        <form id='bbbform'>
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder='John Doe'><br>
+            <input type="text" id="name" name="name" placeholder='John Doe' /><br>
             <label for="contact">Contact:</label><br>
-            <input type="text" id="contact" name="contact" placeholder='(XXX) XXX-XXXX'><br>
+            <input type="text" id="contact" name="contact" placeholder='(XXX) XXX-XXXX' /><br>
             <label for="item">Item:</label><br>
-            <input type="text" id="item" name="item" placeholder='Item Name'><br>
+            <input type="text" id="item" name="item" placeholder='Item Name' /><br>
             <label for="price">Price:</label><br>
-            <input type="text" id="price" name="price" placeholder='Sale Price'><br>
+            <input type="text" id="price" name="price" placeholder='Sale Price' /><br>
             <label for="description">Description:</label><br>
-            <input type="text" id="description" name="description" placeholder='Item Description'><br>
+            <input type="text" id="description" name="description" placeholder='Item Description' /><br>
             <label for="sellersnotes">Seller's Notes:</label><br>
-            <input type="text" id="sellersnotes" name="sellersnotes" placeholder='Seller&#39;s Notes'><br>
-            <p>Image Upload:</p>
-            <form action="/action_page.php">
-                <input type="file" id="myFile" name="filename">
-            </form>
-            <input type="checkbox" id="verify" name="verify" value="Bike">
+            <input type="text" id="sellersnotes" name="sellersnotes" placeholder='Seller&#39;s Notes' /><br>
+            <label for="imgup">Image Upload:</label><br>
+            <input type="file" id="imgup" name="filename"><br>
+            <input type="checkbox" id="verify" name="verify" value="legitimate">
             <label for="verify"> Do you swear this is a legimitate post? ANY JOKE POSTS WILL LEAD TO A PERMANENT
-                BAN</label><br>
-            <input type="submit" value="Post">
+                BAN</label>
+            <br><br>
+            <button type="submit" value="Post" onclick='bbbSubmit()'
+                style='font-size: 24pt; background-color: var(--3); border-radius: 15px; border: 5px solid black;'>Submit</button>
         </form>
     </div>
     <div class='normblock footerdiv'>
@@ -65,5 +68,11 @@
             reserved.</h3>
     </div>
 </body>
+<script>
+    function bbbSubmit() {
+        alert("Thank you for your submission. It will play during the next open slot available in our Baghdad Bulletin Board segment. NOTE: If you have submitted a prank prosting, there will be EXTREME CONSEQUENCES.");
+        window.location.href = "index.html"
+    }
+</script>
 
 </html>
