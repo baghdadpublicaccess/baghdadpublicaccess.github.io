@@ -281,3 +281,14 @@ li {
   border-radius: 10px;
   border: 5px solid black;
 }
+
+.filelist {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+}
+
+.filelist li {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: .6rem;
+}
