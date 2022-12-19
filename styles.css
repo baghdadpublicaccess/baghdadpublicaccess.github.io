@@ -232,7 +232,7 @@ img {
 }
 
 .loginpagediv {
-  background-image: url("loginbackground.png");
+  background-image: url("loginbackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 0 10px 10px white inset;
