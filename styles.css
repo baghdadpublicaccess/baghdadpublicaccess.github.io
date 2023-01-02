@@ -17,7 +17,6 @@
   padding: 10px 10px 10px 10px;
   margin: 50px auto 10px auto;
   max-width: 90%;
-  min-width: 300px;
   border-style: solid;
   border-radius: 15px;
   border-width: 5px;
@@ -59,7 +58,6 @@ nav {
   padding: 0px 10px 0px 10px;
   margin: 10px auto;
   max-width: 90%;
-  min-width: 300px;
   border-style: solid;
   border-radius: 15px;
   border-width: 5px;
@@ -117,7 +115,6 @@ nav li {
   padding: 10px 10px 10px 10px;
   margin: 10px auto;
   max-width: 90%;
-  min-width: 300px;
   border-style: solid;
   border-radius: 15px;
   border-width: 5px;
@@ -239,7 +236,6 @@ img {
   padding: 10px 10px 10px 10px;
   margin: 10px auto;
   max-width: 90%;
-  min-width: 300px;
   border-style: solid;
   border-radius: 15px;
   border-width: 5px;
